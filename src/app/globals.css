@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 221.2 83.2% 53.3%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221.2 83.2% 53.3%;
+    --radius: 0.5rem;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 217.2 91.2% 59.8%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 224.3 76.3% 48%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-[#06254b] text-white;
+  }
+}
+
+@font-face {
+  font-family: 'RocherColorGX';
+  src: url('https://ext.same-assets.com/1693691047/3000496979.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Custom utility classes */
+.section-heading {
+  font-family: 'RocherColorGX', sans-serif;
+  @apply text-4xl md:text-5xl text-center my-6 text-[#57bfcc];
+}
+
+.track-card {
+  @apply bg-blue-800 p-4 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105;
+}
+
+.hero-heading {
+  font-family: 'RocherColorGX', sans-serif;
+  @apply text-4xl md:text-6xl text-[#57bfcc];
+}
+
+.hero-subheading {
+  font-family: 'RocherColorGX', sans-serif;
+  @apply text-3xl md:text-5xl text-[#57bfcc];
+}
+
+.event-card {
+  @apply bg-[#eee6e3] text-[#04244c] rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-2xl;
+}
+
+.event-card-layer {
+  @apply p-6 bg-gradient-to-br from-[#eee6e3] to-[#d37352]/20 h-full flex flex-col justify-between;
+}
+
+.primary-btn {
+  @apply bg-[#06254b] text-white px-6 py-2 rounded-md hover:bg-[#0a3469] transition-colors duration-300;
+}
+
+.stat-number {
+  @apply text-3xl font-bold text-[#57bfcc];
+}
+
+.stat-label {
+  @apply text-sm text-gray-300;
+}
+
+/* Timeline styles */
+.timeline-container {
+  @apply relative;
+}
+
+.timeline-container::after {
+  content: '';
+  @apply absolute top-0 bottom-0 left-1/2 w-1 bg-[#57bfcc] transform -translate-x-1/2;
+}
+
+.timeline-item {
+  @apply relative mb-16 w-full;
+}
+
+.timeline-item::after {
+  content: '';
+  @apply absolute top-6 left-1/2 w-4 h-4 rounded-full bg-[#57bfcc] border-4 border-[#06254b] transform -translate-x-1/2 z-10;
+}
+
+.timeline-content {
+  @apply w-5/12 p-6 bg-blue-800 rounded-lg shadow-lg;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+  @apply ml-auto mr-16;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+  @apply mr-auto ml-16;
+}
