@@ -21,8 +21,15 @@ A sleek, modern **Next.js** web application replicating the [Devcation 2025 webs
 ---
 
 ## 📸 Screenshots
+![Screenshot (977)](https://github.com/user-attachments/assets/13175683-ce0d-4b59-b23e-b0a9343831fd)
+![Screenshot (978)](https://github.com/user-attachments/assets/67ef22b6-70f5-4a1a-a188-67ccdddce19a)
+![Screenshot (979)](https://github.com/user-attachments/assets/2f03ba87-dc02-40eb-9f9b-51084aed28b5)
+![Screenshot (980)](https://github.com/user-attachments/assets/2f0e6965-62bb-4cc6-8f93-6ef28c1e3f4c)
 
-> Add screenshots/gifs here if available to showcase your UI/UX
+![Screenshot (975)](https://github.com/user-attachments/assets/bf60a721-fa35-4a14-a7ca-5da05379e2bd)
+![image](https://github.com/user-attachments/assets/a6e9c36b-742e-4553-bbf0-2b0bca10a02b)
+
+
 
 ---
 
@@ -77,19 +84,7 @@ Deployed easily on **Vercel**:
 - Click **"Deploy"**
 - That’s it! 🎉
 
-More info here: [Vercel Deployment Docs](https://nextjs.org/docs/app/building-your-application/deploying)
-
----
-
-## 🤝 Contribution
-
-Contributions are welcome!
-
-1. Fork the repo
-2. Create a new branch (`git checkout -b feature/your-feature`)
-3. Commit your changes (`git commit -m 'Add your feature'`)
-4. Push to the branch (`git push origin feature/your-feature`)
-5. Open a Pull Request
+More info here: [Vercel Deployment Docs]((https://web-recreate-igdtuw-hackathon.vercel.app/))
 
 ---
 
